@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.5">
+    <title>contents</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            width: 100%;
+            padding: 6% 0;
+            text-align: center;
+        }
+        .container {
+            padding: 0 20%;
+            background-color: #ddddf4;
+        }
+
+        .content {
+            padding: 10px;
+            margin: 10px auto;
+            font-family: cursive;
+            font-size: 1.6vw;
+            background-color: #ddddf4;
+            /*overflow: hidden;*/
+            /*align-content: center;*/
+        }
+        a {
+            color: #0000a0; /* Цвет ссылок */
+        }
+        a:visited {
+            color: #600077; /* Цвет посещенной ссылки */
+        }
+        a:hover {
+            color: red; /* Цвет ссылки при наведении на нее курсора мыши */
+        }
+        a:focus {
+            color: red;
+        }
+        a {
+            text-decoration: none; /* Удаляем подчеркивание */
+        }
+        h1 {
+            font-family: "Segoe Print",serif; /* подбор шрифтов - https://wordmark.it/*/
+            color: #426a7e;
+            font-size: 2.6vw;
+            margin: 0;
+            padding: 0;
+        }
+        b {
+            color: #830000;
+        }
+        pre {
+            font-size: 0.8em;
+        }
+
+        ul {
+            counter-reset: name;      /*Создаем новый счетчик для каждого тега <ul>*/
+            list-style-type: none;      /* Убираем исходную нумерацию у списка */
+        }
+
+        li::before {
+            counter-increment: name;           /*Увеличиваем значение счетчика*/
+            content: counters(name,". ")". ";   /*Выводим число, используя разделитель '.'*/
+        }
+        @media handheld {
+            .container {
+                padding: 0;
+            }
+            .content {
+                background-color: #ddddf4;
+            }
+
+            h1 {
+                font-family: cursive;
+                color: #426a7e;
+                font-size: 2.6vw;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Все о криптовалютах простым языком</h1>
+    </div>
+    <div class="main">
+        <div class="content">
+            <ul>
+                <li><a href="decentralized_systems.html#p101">Децентрализованные системы</a>
+                    <ul>
+                        <li><a href="decentralized_systems.html#p101">История децентрализованных систем</a></li>
+                        <li><a href="decentralized_systems.html#p102">Применение принципов децентрализации</a></li>
+                    </ul>
+                </li>
+                <li><a href="decentralized_systems.html#p2">Блокчейн</a>
+                    <ul>
+                        <li><a href="decentralized_systems.html#p201">Технология блокчейн и ее возможности</a></li>
+                        <li><a href="decentralized_systems.html#p202">Архитектура блокчейн</a></li>
+                        <li><a href="decentralized_systems.html#p203">Применение технологии блокчейн</a></li>
+                        <li><a href="decentralized_systems.html#p204">Как реализован блокчейн в биткоине</a></li>
+                    </ul>
+                </li>
+                <li><a href="cryptocurrency.html#p1">Криптовалюта</a>
+                    <ul>
+                        <li><a href="cryptocurrency.html#p101">Что такое криптовалюта</a></li>
+                        <li><a href="cryptocurrency.html#p102">Что такое Bitcoin</a></li>
+                        <li><a href="cryptocurrency.html#p103">Как создавался Bitcoin</a></li>
+                        <li><a href="cryptocurrency.html#p104">Что такое Ethereum</a></li>
+                        <li><a href="cryptocurrency.html#p105">Эмиссия криптовалют</a></li>
+                        <li><a href="cryptocurrency.html#p106">Как формируется цена на криптовалюту</a></li>
+                        <li><a href="cryptocurrency.html#p107">Как устроена платежная система большинства криптовалют</a></li>
+                        <li><a href="cryptocurrency.html#p108">Сравнение платежной системы криптовалюты с традиционными
+                            платежными системами</a></li>
+                        <li><a href="cryptocurrency.html#p109">Применение криптовалют</a></li>
+                        <li><a href="cryptocurrency.html#p110">Кошельки</a></li>
+                    </ul>
+                </li>
+                <li><a href="smart.html#p1">Смарт-контракты</a>
+                    <ul>
+                        <li><a href="smart.html#p101">Что такое смарт-контракт</a></li>
+                        <li><a href="smart.html#p102">Классификация платформ смарт-контрактов</a></li>
+                        <li><a href="smart.html#p103">Преимущества и недостатки смарт-контрактов</a></li>
+                    </ul>
+                </li>
+                <li><a href="smart.html#p2">Ответвления и клоны криптовалют</a>
+                    <ul>
+                        <li><a href="smart.html#p201">Незапланированные форки</a></li>
+                        <li><a href="smart.html#p202">Запланированные форки</a></li>
+                    </ul>
+                </li>
+                <li><a href="ln.html#p1">Платежные каналы и Lightning Network</a>
+                    <ul>
+                        <li><a href="ln.html#p101">Особенности платежного канала</a></li>
+                        <li><a href="ln.html#p102">Устройство Lightning Network</a></li>
+                        <li><a href="ln.html#p103">Преимущества и недостатки Lightning Network</a></li>
+                    </ul>
+                </li>
+                <li><a href="ln.html#p2">Биржи и Atomic Swap</a>
+                    <ul>
+                        <li><a href="ln.html#p201">Централизованные биржи</a></li>
+                        <li><a href="ln.html#p202">Децентрализованные биржи</a></li>
+                        <li><a href="ln.html#p203">Идея Atomic Swap и требования к учетной системе</a></li>
+                        <li><a href="ln.html#p204">Принцип работы Atomic Swap</a></li>
+                        <li><a href="ln.html#p205">Недостатки Atomic Swap</a></li>
+                    </ul>
+                </li>
+                <li><a href="mining.html#p1">Майнинг</a>
+                    <ul>
+                        <li><a href="mining.html#p101">Майнинг в сети биткоина</a></li>
+                        <li><a href="mining.html#p102">Майнинг в сети эфириума</a></li>
+                        <li><a href="mining.html#p103">Статистика майнинга и оценка энергопотребления</a></li>
+                        <li><a href="mining.html#p104">Алгоритмы достижения консенсуса</a></li>
+                    </ul>
+                </li>
+                <li><a href="altcoins.html#p1">Альткоины - альтернативные цифровые валюты и токены</a>
+                    <ul>
+                        <li><a href="altcoins.html#p101">Bitcoin Cash</a></li>
+                        <li><a href="altcoins.html#p102">Ripple и Stellar</a></li>
+                        <li><a href="altcoins.html#p103">Litecoin</a></li>
+                        <li><a href="altcoins.html#p104">Dash</a></li>
+                        <li><a href="altcoins.html#p105">Bitcoin SV</a></li>
+                        <li><a href="altcoins.html#p106">Monero</a></li>
+                        <li><a href="altcoins.html#p107">Ethereum Classic</a></li>
+                        <li><a href="altcoins.html#p108">Cardano</a></li>
+                        <li><a href="altcoins.html#p109">EOS</a></li>
+                        <li><a href="altcoins.html#p110">TRON</a></li>
+                        <li><a href="altcoins.html#p111">Токены</a></li>
+                        <li><a href="altcoins.html#p112">Tether</a></li>
+                    </ul>
+                </li>
+                <li>Платформа Ethereum
+                    <ul>
+                        <li>Особенности работы платформы Ethereum</li>
+                        <li>Основные принципы</li>
+                        <li>Смарт-контракты на Ethereum</li>
+                        <li>Недостатки платформы Ethereum</li>
+                    </ul>
+                </li>
+                <li><a href="security.html#p1">Основы цифровой безопасности</a>
+                    <ul>
+                        <li><a href="security.html#p101">Компьютерные преступления и их масштабы</a></li>
+                        <li><a href="security.html#p102">Основные киберугрозы и способы защиты от них</a></li>
+                        <li><a href="security.html#p103">Пароль - основа цифровой безопасности</a></li>
+                        <li><a href="security.html#p104">История краж монет с централизованных бирж</a></li>
+                    </ul>
+                </li>
+                <li>Практические навыки работы с криптовалютой
+                    <ul>
+                        <li>Создание кошельков</li>
+                        <li>Проведение транзакций</li>
+                        <li>Регистрация на бирже</li>
+                        <li>Заведение валюты, tether</li>
+                        <li>Обменные операции</li>
+                        <li>Выведение валюты</li>
+                        <li>Хранение криптовалюты</li>
+                        <li>Offline-транзакции</li>
+                    </ul>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <!-- footer -->
+
+    </div>
+</div>
+
+
+</body>
+</html>
